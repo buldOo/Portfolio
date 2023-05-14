@@ -1,0 +1,278 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+} /* KAYAK */
+@font-face {
+  font-family: "kayak_sansbold_italic";
+  src: url("/assets/font/kayak/kayak_sans_bold-webfont.woff2") format("woff2"), url("/assets/font/kayak/kayak_sans_bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "kayak_sansbold";
+  src: url("/assets/font/kayak/kayak_sans_bold-webfont.woff2") format("woff2"), url("/assets/font/kayak/kayak_sans_bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "kayak_sanslight_italic";
+  src: url("/assets/font/kayak/kayak_sans_light_italic-webfont.woff2") format("woff2"), url("/assets/font/kayak/kayak_sans_light_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "kayak_sanslight";
+  src: url("/assets/font/kayak/kayak_sans_light-webfont.woff2") format("woff2"), url("/assets/font/kayak/kayak_sans_light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "kayak_sansregular_italic";
+  src: url("/assets/font/kayak/kayak_sans_regular_italic-webfont.woff2") format("woff2"), url("/assets/font/kayak/kayak_sans_regular_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "kayak_sansregular";
+  src: url("/assets/font/kayak/kayak_sans_regular-webfont.woff2") format("woff2"), url("/assets/font/kayak/kayak_sans_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* COVES */
+@font-face {
+  font-family: "covesbold";
+  src: url("/assets/font/coves/coves_bold-webfont.woff2") format("woff2"), url("/assets/font/coves/coves_bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "coveslight";
+  src: url("/assets/font/coves/coves_light-webfont.woff2") format("woff2"), url("/assets/font/coves/coves_light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* body {
+  background-color: #0F0F0F;
+  overflow-X: hidden;
+  cursor: none;
+}
+* body .cursor {
+  position: absolute;
+  z-index: 999;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  mix-blend-mode: difference;
+  border-radius: 50px;
+  pointer-events: none;
+}
+* body .home_banner {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  gap: 45px;
+  overflow: hidden;
+}
+* body .home_banner h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-family: "covesbold";
+  font-size: 50px;
+}
+* body .home_banner img {
+  animation: banner-slide 50s linear infinite;
+}
+* body .navbar {
+  margin: 50px auto 0 auto;
+  width: fit-content;
+  display: flex;
+  gap: 30px;
+  color: #ffffff;
+  font-family: "kayak_sansregular";
+  background-color: #1C191F;
+  padding: 10px;
+  border-radius: 50px;
+}
+* body .navbar .nav_menu {
+  position: relative;
+  padding: 15px 30px;
+  overflow: hidden;
+  border-radius: 50px;
+}
+* body .navbar .nav_menu h1 {
+  position: relative;
+  font-family: "kayak_sansregular";
+  font-size: 20px;
+}
+* body .navbar .nav_menu.active .background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background-color: rgba(129, 49, 222, 0.5);
+  transition: all 1s linear;
+}
+* body .navbar .nav_menu.inactive .background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background-color: rgba(129, 49, 222, 0.5);
+  transition: all 1s linear;
+}
+* body .modules {
+  width: 100%;
+  padding: 50px 50px;
+}
+* body .modules div.hidden {
+  display: none !important;
+}
+* body .modules div h1 {
+  color: #ffffff;
+  font-size: 50px;
+  font-family: "covesbold";
+}
+* body .modules div.about_module {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+* body .modules div.about_module .tablets {
+  display: flex;
+  gap: 15px;
+}
+* body .modules div.about_module .tablets h2 {
+  color: rgba(129, 49, 222, 0.5);
+  font-family: "kayak_sansregular";
+  font-size: 20px;
+}
+* body .modules div.about_module .tablets p {
+  color: #848386;
+  font-family: "kayak_sansbold";
+  font-size: 20px;
+}
+* body .modules div.about_module .about_text {
+  width: 600px;
+  color: #848386;
+  font-family: "kayak_sansregular";
+  font-size: 20px;
+}
+* body .modules div.dev_module .heading {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 100px;
+}
+* body .modules div.dev_module .heading .dev_text {
+  width: 600px;
+  color: #848386;
+  font-family: "kayak_sansregular";
+  font-size: 20px;
+}
+* body .modules div.dev_module .projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+* body .modules div.dev_module .projects h2 {
+  color: #ffffff;
+  font-size: 40px;
+  font-family: "covesbold";
+}
+* body .modules div.dev_module .projects .project {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: start;
+  height: 600px;
+}
+* body .modules div.dev_module .projects .project .description {
+  display: flex;
+  height: 600px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+* body .modules div.dev_module .projects .project .description .tiles {
+  padding-top: 10px;
+  display: flex;
+  gap: 15px;
+}
+* body .modules div.dev_module .projects .project .description .tiles p {
+  background-color: rgba(129, 49, 222, 0.5);
+  padding: 7.5px 15px;
+  border-radius: 50px;
+  color: #ffffff;
+  font-family: "kayak_sansregular";
+  font-size: 15px;
+}
+* body .modules div.dev_module .projects .project img.phone {
+  height: 100%;
+  width: auto;
+}
+* body .modules div.dev_module .projects .project img.desktop {
+  height: 80%;
+  width: auto;
+}
+
+/* keyframes */
+@keyframes banner-slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-103.5%);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
