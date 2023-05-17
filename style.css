@@ -264,6 +264,51 @@ td, th {
   height: 80%;
   width: auto;
 }
+* body .modules div.mockup_module .heading {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 100px;
+}
+* body .modules div.mockup_module .heading .dev_text {
+  width: 600px;
+  color: #848386;
+  font-family: "kayak_sansregular";
+  font-size: 20px;
+}
+* body .modules div.mockup_module .projects {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+* body .modules div.mockup_module .projects .project .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+* body .modules div.mockup_module .projects .project .tiles {
+  padding-top: 10px;
+  display: flex;
+  gap: 15px;
+}
+* body .modules div.mockup_module .projects .project .tiles p {
+  background-color: rgba(129, 49, 222, 0.5);
+  padding: 7.5px 15px;
+  border-radius: 50px;
+  color: #ffffff;
+  font-family: "kayak_sansregular";
+  font-size: 15px;
+}
+* body .modules div.mockup_module .projects .project .images {
+  display: flex;
+  justify-content: space-around;
+}
+* body .modules div.mockup_module .projects .project .images img.desktop {
+  width: 600px;
+}
+* body .modules div.mockup_module .projects .project .images img.phone {
+  height: 600px;
+}
 
 /* keyframes */
 @keyframes banner-slide {
